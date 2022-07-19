@@ -1,0 +1,185 @@
+:root {
+  --clr-primary: hsl(274, 100%, 55%);
+  --clr-accent: hsl(0, 0%, 92%);
+  --clr-bkg: hsl(293, 100%, 5%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--clr-bkg);
+  background-image: url("/Images/Jyourz/Jyourz-Signature-White-40-Opacity.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-accent);
+  padding: 0 4em;
+}
+
+/* Nav Bar */
+
+.menu {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.menu li,
+a {
+  text-decoration: none;
+  list-style: none;
+  padding: 0 1rem;
+  color: var(--clr-primary);
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.logo {
+  position: absolute;
+  right: 6rem;
+  margin: 0;
+  padding: 0;
+  width: 75px;
+}
+
+.search {
+  border: 2px solid var(--clr-primary);
+  border-radius: 5px;
+  width: 10%;
+  color: var(--clr-primary);
+}
+
+.search:hover,
+.search:focus {
+  box-shadow: 0px 0px 2px var(--clr-primary);
+}
+
+.cart {
+  width: 2rem;
+  color: var(--clr-primary);
+}
+
+.header-video {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Album Grid */
+
+.album-section {
+  color: var(--clr-accent);
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2%;
+}
+
+.merch__grid {
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 80%;
+  display: grid;
+  grid: auto/ auto auto auto;
+  gap: 2rem;
+}
+
+.merch__info-container {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  color: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.merch__info-container img {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 0.5rem;
+}
+
+.merch__info-container span {
+  padding: 0.125rem 0;
+}
+
+.atc-btn {
+  font-size: 1rem;
+  align-self: center;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  color: var(--clr-accent);
+  background-color: var(--clr-primary);
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+  background: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 75%));
+  color: rgb(170, 170, 170);
+  text-align: center;
+  margin: 7% 0 0 0;
+  padding: 4%;
+}
+
+#footer a {
+  margin: 0;
+  padding: 0;
+}
+
+.icons {
+  padding: 20px;
+  color: rgb(170, 170, 170);
+}
+
+.icons:hover,
+.icons:focus {
+  cursor: pointer;
+}
+
+/* Events Page */
+.coming-soon {
+  font-family: "Bebas Neue", cursive;
+  color: red;
+  text-align: center;
+  font-size: 8rem;
+  padding: 15%;
+  transform: rotate(-45deg);
+}
+
+/* Grid Size Media Query */
+
+@media (max-width: 825px) {
+  .merch__grid {
+    grid: auto/ auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .body__logo-container {
+    background-image: none;
+  }
+
+  /* Put Black Logo In Center of Nav */
+}
