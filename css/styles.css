@@ -191,6 +191,8 @@ a {
   font-size: 8rem;
   padding: 15%;
   transform: rotate(-45deg);
+  position: relative;
+  z-index: -1;
 }
 
 .hamburger {
