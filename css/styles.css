@@ -43,12 +43,19 @@ a {
   list-style: none;
   padding: 1rem 1rem;
   color: var(--clr-primary);
+  transition: all 0.125s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  color: var(--clr-bkg);
+  transform: scale(1.5);
 }
 
 .logo {
   position: absolute;
   top: 0;
-  right: 6rem;
+  left: 2%;
   margin: 0;
   padding: 0;
   width: 65px;
@@ -83,15 +90,16 @@ a {
   font-family: "Bebas Neue", cursive;
   text-align: center;
   font-size: 4rem;
-  padding-top: 2%;
+  padding: 1.5em 0;
+}
+
+.row {
+  margin: 0 6rem;
 }
 
 .merch__grid {
-  margin: 0 auto;
   padding-top: 3rem;
   max-width: 80%;
-  display: grid;
-  grid: auto/ auto auto auto;
   gap: 2rem;
 }
 
@@ -103,6 +111,13 @@ a {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  padding-bottom: 2em;
+  transition: all 0.125s ease-in-out;
+}
+
+.merch__info-container:hover,
+.merch__info-container:focus {
+  transform: scale(1.0625);
 }
 
 .merch__info-container img {
@@ -115,7 +130,11 @@ a {
   padding: 0.125rem 0;
 }
 
-.atc-btn {
+.img-link {
+  padding: 0;
+}
+
+.cta-btn {
   font-size: 1rem;
   align-self: center;
   padding: 0.5em 1em;
@@ -124,6 +143,12 @@ a {
   background-color: var(--clr-primary);
   border: none;
   cursor: pointer;
+  transition: all 0.125s ease-in-out;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  background-color: hsl(274, 100%, 45%);
 }
 
 /* Footer */
@@ -136,6 +161,11 @@ a {
   padding: 4%;
 }
 
+#footer p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
 #footer a {
   margin: 0;
   padding: 0;
@@ -144,11 +174,13 @@ a {
 .icons {
   padding: 20px;
   color: rgb(170, 170, 170);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
 }
 
 .icons:hover,
 .icons:focus {
-  cursor: pointer;
+  transform: scale(1.5);
 }
 
 /* Events Page */
@@ -166,19 +198,28 @@ a {
   font-size: 2rem;
   line-height: 3.5rem;
   display: none;
+  transition: all 0.125s ease-in-out;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+  color: var(--clr-bkg);
 }
 
 #toggle {
   display: none;
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 992px) {
   .hamburger {
     color: var(--clr-primary);
     display: block;
     cursor: pointer;
-    align-self: flex-start;
     width: 30px;
+  }
+
+  .logo {
+    display: none;
   }
 
   .menu {

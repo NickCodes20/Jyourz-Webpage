@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +19,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -36,7 +39,7 @@
           <li><a href="merch.html">Merch</a></li>
         </ul>
       </nav>
-      <!-- <img class="logo" src="/Images/Jyourz/Signature-Logo.jpg" /> -->
+      <img class="logo" src="/Images/Jyourz/Signature-Logo.jpg" />
       <!-- <input class="search" type="text" name="search" value="Search" /> -->
       <!-- <img class="cart" src="/Images/SVG/Cart (Static) SVG.svg" /> -->
 
@@ -58,55 +61,86 @@
 
     <!-- Product Grid -->
 
-    <h2 class="album-section">Albums & Singles</h2>
-    <div class="merch__grid">
-      <div class="merch__info-container">
-        <img src="/Images/Jyourz/Now You Know Cover Art.jpeg" />
-        <span class="merch__name">Now You Know</span>
-        <!-- <span class="merch__price">$7.92</span> -->
-        <a href="https://linktr.ee/jyourz" target="_blank"
-          ><button class="atc-btn">Stream Now</button></a
-        >
+    <h2 class="album-section">Albums</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/Now You Know Cover Art.jpeg" /></a>
+          <span class="merch__name">Now You Know</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+            ><button class="cta-btn">Stream Now</button></a
+          >
+        </div>
       </div>
-      <div class="merch__info-container">
-        <img src="/Images/Jyourz/All of Me Cover Art.jpeg" />
-        <span class="merch__name">All of Me</span>
-        <!-- <span class="merch__price">$7.92</span> -->
-        <a href="https://linktr.ee/jyourz" target="_blank"
-          ><button class="atc-btn">Stream Now</button></a
-        >
-      </div>
-      <div class="merch__info-container">
-        <img src="/Images/Jyourz/Thinking Out Loud Cover Art.jpeg" />
-        <span class="merch__name">Thinking Out Loud</span>
-        <!-- <span class="merch__price">$7.92</span> -->
-        <a href="https://linktr.ee/jyourz" target="_blank"
-          ><button class="atc-btn">Stream Now</button></a
-        >
-      </div>
-      <div class="merch__info-container">
-        <img src="/Images/Jyourz/Involved Cover Art.jpeg" />
-        <span class="merch__name">Involved</span>
-        <!-- <span class="merch__price">$7.92</span> -->
-        <a href="https://linktr.ee/jyourz" target="_blank"
-          ><button class="atc-btn">Stream Now</button></a
-        >
-      </div>
-      <div class="merch__info-container">
-        <img src="/Images/Jyourz/It Ain't The Same No More Cover Art.jpeg" />
-        <span class="merch__name">It Ain't The Same No More</span>
-        <!-- <span class="merch__price">$7.92</span> -->
-        <a href="https://linktr.ee/jyourz" target="_blank"
-          ><button class="atc-btn">Stream Now</button></a
-        >
+      <div class="col-lg-4 col-md-6 col-sm-12"> 
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/All of Me Cover Art.jpeg" /></a>
+          <span class="merch__name">All of Me</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+            ><button class="cta-btn">Stream Now</button></a
+          >
+        </div>
+      </div> 
+      <div class="col-lg-4 col-md-6 col-sm-12">  
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/Thinking Out Loud Cover Art.jpeg" /></a>
+          <span class="merch__name">Thinking Out Loud</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+            ><button class="cta-btn">Stream Now</button></a
+            >
+        </div>
       </div>
     </div>
-
+    <h2 class="album-section">Singles</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12"> 
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/It Ain't The Same No More Cover Art.jpeg" /></a>
+          <span class="merch__name">It Ain't The Same No More</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+            ><button class="cta-btn">Stream Now</button></a
+          >
+        </div>
+      </div> 
+      <div class="col-lg-4 col-md-6 col-sm-12"> 
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/Way Back Cover Art.jpg" /></a>
+          <span class="merch__name">Way Back</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+          ><button class="cta-btn">Stream Now</button></a
+          >
+        </div>
+      </div> 
+      <div class="col-lg-4 col-md-6 col-sm-12"> 
+        <div class="merch__info-container">
+          <a class="img-link" href="https://linktr.ee/jyourz" target="_blank"
+          ><img src="/Images/Jyourz/Involved Cover Art.jpeg" /></a>
+          <span class="merch__name">Involved</span>
+          <!-- <span class="merch__price">$7.92</span> -->
+          <a href="https://linktr.ee/jyourz" target="_blank"
+            ><button class="cta-btn">Stream Now</button></a
+          >
+        </div>
+      </div>
+    </div>
     <!-- Product Grid End -->
 
     <!-- Footer -->
 
     <footer id="footer">
+      <p>Socials:</p>
+
+      <a href="https://www.youtube.com/channel/UCXlmJOFPwdQHomWd2hnEzAw" target="_blank"><i class="fa-brands fa-youtube icons"></i></a>
       <a href="https://www.instagram.com/jyourz/?hl=en" target="_blank"
         ><i class="fa-brands fa-instagram icons"></i
       ></a>
